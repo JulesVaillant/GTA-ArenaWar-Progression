@@ -1,0 +1,8 @@
+version: '3'
+services:
+  steam-review-guessr:
+    container_name: gta-arenawar-progression
+    image: gta-arenawar-progression-image
+    ports:
+      - '3000:3000'
+    restart: unless-stopped

@@ -11,19 +11,34 @@ The accumulative amount of AP required to reach rank n can be expressed as:
 <div align="center"><strong>5×200<sup>2</sup>+45×200 = 209k AP</strong></div> <br/>
 
 ## :computer: Install and run
-### NodeJS
+### 🐋Docker-compose (recommanded)
+First, build the image by typing the following command:
+```
+docker build -t gta-arenawar-progression-image .
+```
+Then, just run the container by typing the following command:
+```
+docker-compose up -d
+```
+
+
+### ⚙️NodeJS
 :warning: This app was only tested with Node v16.14.0 and above, there is no guaranteed that it works with older versions :warning:
 
 
 You can download the project and run it with NodeJS if you have it installed on your computer.\
-First, you have to install express by typing:
+First, you have to install express and its requirements by typing:
 ```
 npm install express
+```
+and
+```
+npm install ejs
 ```
 Next, simply run it by typing:
 ```
 node GTA_ArenaWar_Progression.js
 ```
 
-\
-Enjoy!
+
+## Enjoy!

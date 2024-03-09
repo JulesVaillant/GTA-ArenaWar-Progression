@@ -13,6 +13,8 @@ The accumulative amount of AP required to reach rank n can be expressed as:
 ## :computer: Install and run
 ### NodeJS
 :warning: This app was only tested with Node v16.14.0 and above, there is no guaranteed that it works with older versions :warning:
+
+
 You can download the project and run it with NodeJS if you have it installed on your computer.\
 First, you have to install express by typing:
 ```

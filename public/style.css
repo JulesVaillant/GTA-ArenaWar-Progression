@@ -42,11 +42,16 @@ body,html {
 
   label {
     color:aliceblue;
+    font-weight: bold;
   }
 
   .item {
     text-align: center;
-    margin: 20px; /* Espacement entre les éléments */
-    display: block; /* Pour empiler les éléments les uns au-dessus des autres */
+    margin: 10px; /* Espacement entre les éléments */
+    /*display: block; /* Pour empiler les éléments les uns au-dessus des autres */
   }
   
+  p {
+    color:aliceblue;
+    margin: 0;
+  }

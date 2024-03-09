@@ -28,13 +28,21 @@ function purcentageCompleted(currentLevel){
 
 function updateProgressBars() {
     var inputLevel = document.getElementById("inputLevel").value;
-    /*var progressBar = document.getElementById("progressBar");
-    progressBar.value = inputLevel;*/
+    var inputXP = document.getElementById("inputXP").value;
     const completionList = purcentageCompleted(inputLevel);
+    const hoursLeftList = hoursLeft(inputXP,inputLevel);
+
     for(let i=0; i<RewardsList.length;i++){
         var progressBarName = "progressBar"+RewardsList[i]; 
         var progressBar = document.getElementById(progressBarName);
         progressBar.value = completionList[i];
-        //console.log(completionList[i]);
+
+        var purcentageSpanName = "purcentage"+RewardsList[i];
+        var purcentageSpan = document.getElementById(purcentageSpanName);
+        purcentageSpan.innerHTML = Math.round(completionList[i]*100)/100;
+
+        var hoursLeftSpanName = "hours"+RewardsList[i];
+        var hoursLeftSpan = document.getElementById(hoursLeftSpanName);
+        hoursLeftSpan.innerHTML = Math.round(hoursLeftList[i]*100)/100;
     }
 }

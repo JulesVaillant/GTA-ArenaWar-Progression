@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('index', { progressValue: 0 });
+    res.render('index', { progressValue: 99 });
 });
 
 app.listen(port, () => {
